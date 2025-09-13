@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Smart India Hackathon (SIH) 2025 - St Aloysius University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h3>SIH 2025</h3>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About SIH</a></li>
+                <li><a href="#guidelines" class="nav-link">Guidelines</a></li>
+                <li><a href="#registration" class="nav-link">Registration</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">India's Largest Innovation Festival</div>
+                <h1 class="hero-title">
+                    Internal Smart India<br>
+                    <span class="gradient-text">Hackathon 2025</span>
+                </h1>
+                <p class="hero-subtitle">St Aloysius (Deemed to be University), Mangalore</p>
+                <p class="hero-description">
+                    Join the nation's largest open innovation model and showcase your problem-solving skills. 
+                    Form teams, innovate solutions, and represent our university!
+                </p>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-container">
+                    <h3>Registration Deadline</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="time-unit">
+                            <span class="time-value" id="hours">00</span>
+                            <span class="time-label">Hours</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-value" id="minutes">00</span>
+                            <span class="time-label">Minutes</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-value" id="seconds">00</span>
+                            <span class="time-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="1391884">0</span>
+                        <span class="stat-label">Students Participated</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="45">0</span>
+                        <span class="stat-label">Teams to be Shortlisted</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn btn--primary btn--lg cta-btn" onclick="scrollToSection('registration')">
+                        Register Now
+                    </button>
+                    <button class="btn btn--outline btn--lg" onclick="scrollToSection('about')">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About SIH Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Smart India Hackathon</h2>
+                <p>World's Largest Open Innovation Model</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-intro">
+                    <p>Smart India Hackathon is a nationwide initiative to provide students with a platform to solve the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem-solving.</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🚀</div>
+                        <h3>Innovation & Impact</h3>
+                        <p>Opportunity to apply knowledge to real-world problems and create meaningful solutions</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">👨‍🏫</div>
+                        <h3>Mentorship</h3>
+                        <p>Guidance from industry professionals and academic experts throughout the journey</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🏆</div>
+                        <h3>Recognition & Rewards</h3>
+                        <p>Attractive prizes for winners at national level and chance to represent university</p>
+                    </div>
+                </div>
+
+                <div class="problem-categories">
+                    <h3>Problem Statement Categories</h3>
+                    <div class="categories-grid">
+                        <div class="category-tag">Renewable/Sustainable Energy</div>
+                        <div class="category-tag">Block Chain and Cyber Security</div>
+                        <div class="category-tag">Smart Education</div>
+                        <div class="category-tag">Fintech</div>
+                        <div class="category-tag">Smart Automation</div>
+                        <div class="category-tag">Fitness and Sports</div>
+                        <div class="category-tag">Heritage and Culture</div>
+                        <div class="category-tag">Meditech/Biotech/Healthtech</div>
+                        <div class="category-tag">Agriculture, Foodtech and Rural Development</div>
+                        <div class="category-tag">Smart Vehicles, Transportation and Logistics</div>
+                        <div class="category-tag">Robotics and Drones</div>
+                        <div class="category-tag">Clean and Green Technology</div>
+                        <div class="category-tag">Tourism</div>
+                        <div class="category-tag">Space Technology</div>
+                        <div class="category-tag">Disaster Management</div>
+                        <div class="category-tag">Games & Toys</div>
+                        <div class="category-tag">Miscellaneous</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guidelines Section -->
+    <section id="guidelines" class="guidelines">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Guidelines</h2>
+                <p>Everything you need to know about participation</p>
+            </div>
+
+            <div class="guidelines-content">
+                <div class="rules-card">
+                    <h3>Team Formation Rules</h3>
+                    <ul class="rules-list">
+                        <li>Form a team of <strong>6 members</strong></li>
+                        <li>Include <strong>minimum 1 female member</strong></li>
+                        <li>All team members must be from St Aloysius University</li>
+                        <li>One team can work on only one problem statement</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-section">
+                    <h3>Important Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item active">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Registration & PPT Submission</h4>
+                                <p class="timeline-date">13 Sept 2025, 8:00 PM</p>
+                                <p>Submit your team registration and presentation in SIH2025 format</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Internal Round</h4>
+                                <p class="timeline-date">15 Sept 2025, 11:30 AM</p>
+                                <p>Present your solution at School of Engineering</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Final SIH Submission</h4>
+                                <p class="timeline-date">Post Internal Round</p>
+                                <p>Best 45 teams will be shortlisted for national level participation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submission-info">
+                    <h3>Submission Requirements</h3>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <h4>PPT Format</h4>
+                            <p>Use official SIH2025 presentation template</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>Upload Link</h4>
+                            <a href="https://tinyurl.com/sih-upload-ppt" target="_blank" class="btn btn--primary btn--sm">
+                                Upload PPT Here
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="registration">
+        <div class="container">
+            <div class="section-header">
+                <h2>Team Registration</h2>
+                <p>Register your team for Internal SIH 2025</p>
+            </div>
+
+            <div class="registration-form-container">
+                <form id="registrationForm" class="registration-form">
+                    <!-- Progress Indicator -->
+                    <div class="form-progress">
+                        <div class="progress-step active" data-step="1">
+                            <span>1</span>
+                            <label>Team Details</label>
+                        </div>
+                        <div class="progress-step" data-step="2">
+                            <span>2</span>
+                            <label>Members</label>
+                        </div>
+                        <div class="progress-step" data-step="3">
+                            <span>3</span>
+                            <label>Problem Statement</label>
+                        </div>
+                        <div class="progress-step" data-step="4">
+                            <span>4</span>
+                            <label>Submission</label>
+                        </div>
+                    </div>
+
+                    <!-- Step 1: Team Details -->
+                    <div class="form-step active" data-step="1">
+                        <h3>Team Information</h3>
+                        <div class="form-group">
+                            <label class="form-label">Team Name *</label>
+                            <input type="text" class="form-control" name="teamName" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Team Leader Name *</label>
+                                <input type="text" class="form-control" name="leaderName" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Leader Email *</label>
+                                <input type="email" class="form-control" name="leaderEmail" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Leader Phone *</label>
+                                <input type="tel" class="form-control" name="leaderPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Branch/Department *</label>
+                                <input type="text" class="form-control" name="leaderBranch" required>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn--primary" onclick="nextStep()">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Team Members -->
+                    <div class="form-step" data-step="2">
+                        <h3>Team Members (5 additional members)</h3>
+                        <div id="membersContainer">
+                            <!-- Members will be added dynamically -->
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn--outline" onclick="prevStep()">Previous</button>
+                            <button type="button" class="btn btn--primary" onclick="nextStep()">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Problem Statement -->
+                    <div class="form-step" data-step="3">
+                        <h3>Problem Statement Selection</h3>
+                        <div class="form-group">
+                            <label class="form-label">Choose Problem Category *</label>
+                            <select class="form-control" name="problemCategory" required>
+                                <option value="">Select a category</option>
+                                <option value="renewable-energy">Renewable/Sustainable Energy</option>
+                                <option value="blockchain-security">Block Chain and Cyber Security</option>
+                                <option value="smart-education">Smart Education</option>
+                                <option value="fintech">Fintech</option>
+                                <option value="smart-automation">Smart Automation</option>
+                                <option value="fitness-sports">Fitness and Sports</option>
+                                <option value="heritage-culture">Heritage and Culture</option>
+                                <option value="meditech">Meditech/Biotech/Healthtech</option>
+                                <option value="agriculture">Agriculture, Foodtech and Rural Development</option>
+                                <option value="transportation">Smart Vehicles, Transportation and Logistics</option>
+                                <option value="robotics">Robotics and Drones</option>
+                                <option value="clean-tech">Clean and Green Technology</option>
+                                <option value="tourism">Tourism</option>
+                                <option value="space-tech">Space Technology</option>
+                                <option value="disaster-management">Disaster Management</option>
+                                <option value="games-toys">Games & Toys</option>
+                                <option value="miscellaneous">Miscellaneous</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Problem Statement Description</label>
+                            <textarea class="form-control" name="problemDescription" rows="4" placeholder="Briefly describe the problem you want to solve..."></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn--outline" onclick="prevStep()">Previous</button>
+                            <button type="button" class="btn btn--primary" onclick="nextStep()">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Submission -->
+                    <div class="form-step" data-step="4">
+                        <h3>Final Submission</h3>
+                        <div class="submission-links">
+                            <div class="upload-info">
+                                <h4>PPT Upload</h4>
+                                <p>Upload your presentation in SIH2025 format using the link below:</p>
+                                <a href="https://tinyurl.com/sih-upload-ppt" target="_blank" class="btn btn--primary">
+                                    Upload PPT
+                                </a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the terms and conditions and confirm that all information provided is accurate
+                            </label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn--outline" onclick="prevStep()">Previous</button>
+                            <button type="submit" class="btn btn--primary">Submit Registration</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="success-message hidden">
+                    <div class="success-content">
+                        <div class="success-icon">✓</div>
+                        <h3>Registration Successful!</h3>
+                        <p>Your team has been successfully registered for Internal SIH 2025. You will receive a confirmation email shortly.</p>
+                        <button class="btn btn--primary" onclick="resetForm()">Register Another Team</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Information</h2>
+                <p>For any queries or assistance</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Event Organizers</h3>
+                        <p>For queries related to registration and event details, you may contact:</p>
+                        <ul>
+                            <li><strong>Primary Contact:</strong> Event Coordinator</li>
+                            <li><strong>Secondary Contact:</strong> Siraj Sir</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>University Details</h3>
+                        <p><strong>St Aloysius (Deemed to be University)</strong></p>
+                        <p>Mangalore, Karnataka, India</p>
+                        <p><strong>Venue:</strong> School of Engineering</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Important Links</h3>
+                        <ul>
+                            <li><a href="https://tinyurl.com/sih-upload-ppt" target="_blank">PPT Upload Portal</a></li>
+                            <li><a href="#guidelines">Event Guidelines</a></li>
+                            <li><a href="#registration">Team Registration</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Internal SIH 2025</h4>
+                    <p>St Aloysius (Deemed to be University), Mangalore</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About SIH</a></li>
+                        <li><a href="#guidelines">Guidelines</a></li>
+                        <li><a href="#registration">Registration</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 St Aloysius (Deemed to be University). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
